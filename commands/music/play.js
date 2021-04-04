@@ -50,7 +50,7 @@ module.exports = class PlayCommand extends Command {
      */
     async runVideo(message, connection, videoUrl) {
         const server = message.client.server;
-        const dispatcher = connection.play( await ytdl(videoUrl, {filter: 'audioonly' }), {type: 'opus' } )
+        const dispatcher = connection.play( await ytdl(videoUrl, {filter: 'audioonly' }), {type: 'opus' } );
 
         server.queue.shift();
         server.dispatcher = dispatcher;
