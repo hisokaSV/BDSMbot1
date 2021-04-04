@@ -8,7 +8,7 @@ module.exports = class PauseCommand extends Command {
             aliases: ['c'],
             group: 'music',
             memberName: 'pause',
-            description: 'met la lecture en pause `-c` ou  `-pause`',
+            description: 'met la lecture en pause `-c` ou  `-pause`'
         });
     }
 
@@ -28,7 +28,7 @@ module.exports = class PauseCommand extends Command {
         }
 
         if (!message.client.voice.connections.first()) {
-            return message.say(":x: Je ne suis pas connecté a un salon vocal. Tape `join` pour m'ajouter :x:")
+            return message.say(":x: Je ne suis pas connecté a un salon vocal. Tape `join` pour m'ajouter :x:");
         }
           
         if(dispatcher){
