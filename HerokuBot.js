@@ -3,9 +3,6 @@ const path = require('path');
 /*const { token } = require('./config.json'); */
 
 const client = new CommandoClient({
-    /*commandPrefix: '-',
-    owner:'281522466302722059',
-    invite: 'https://discord.gg/BMnKsCM3gP'*/
     commandPrefix: process.env.prefix,
     owner: process.env.ownerID,
     invite: process.env.inv
